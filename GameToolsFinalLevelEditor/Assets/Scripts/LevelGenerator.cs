@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    public Texture2D map; // width:64, height:16
+    public Texture2D map;
     public ColorToPrefab[] colorMappings;
 
     // Start is called before the first frame update
@@ -31,7 +31,10 @@ public class LevelGenerator : MonoBehaviour
             return;
         }
 
-        Debug.Log(pixelColor);
+        if (pixelColor.r == 255 && pixelColor.g == 255 && pixelColor.b == 255)
+        {
+            return;
+        }
 
         foreach (ColorToPrefab colorMapping in colorMappings)
         {
