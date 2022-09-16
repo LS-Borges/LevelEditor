@@ -53,13 +53,13 @@
     <UnityVersion>2020.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\LevelEditor\Scripts\TextLevelGenerator.cs" />
-    <Compile Include="Assets\LevelEditor\Scripts\ColorToPrefab.cs" />
-    <Compile Include="Assets\LevelEditor\Scripts\ImageLevelGenerator.cs" />
-    <Compile Include="Assets\LevelEditor\Scripts\CharToPrefab.cs" />
+    <Compile Include="Assets\LevelEditorTool\Scripts\ImageLevelGenerator.cs" />
+    <Compile Include="Assets\LevelEditorTool\Scripts\CharToPrefab.cs" />
+    <Compile Include="Assets\LevelEditorTool\Scripts\ColorToPrefab.cs" />
+    <Compile Include="Assets\LevelEditorTool\Scripts\TextLevelGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\LevelEditor\Layouts\ExampleLayout.txt" />
+    <None Include="Assets\LevelEditorTool\Layouts\ExampleLayout.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
